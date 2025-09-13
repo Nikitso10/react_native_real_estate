@@ -11,7 +11,7 @@ import {Redirect} from "expo-router";
 const SignIn = () => {
     const { refetch, loading, isLogged } = useGlobalContext();
 
-    if (!loading && isLogged) return <Redirect href="/" />;
+    //if (!loading && isLogged) return <Redirect href="/" />;
 
     const handleLogin = async () => {
         const result = await login();
