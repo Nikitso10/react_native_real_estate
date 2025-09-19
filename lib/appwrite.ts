@@ -10,7 +10,7 @@ import {
 } from "react-native-appwrite";
 import * as Linking from "expo-linking";
 import { openAuthSessionAsync } from "expo-web-browser";
-import { useEffect, useState } from "react";
+
 
 
 export const config = {
@@ -36,7 +36,7 @@ client
 export const avatar = new Avatars(client);
 export const account = new Account(client);
 export const databases = new Databases(client);
-export const storage = new Storage(client);
+//export const storage = new Storage(client);
 
 export async function login() {
     try {
